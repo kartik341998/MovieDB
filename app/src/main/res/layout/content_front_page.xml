@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Movies.FrontPage"
+
+    tools:showIn="@layout/app_bar_front_page"
+    android:orientation="vertical"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nowplaying Movies"
+            android:textSize="30dp"
+            android:layout_weight=".5"
+            android:textColor="#ffffff" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:text="View All"
+            android:textColor="#ffffff"
+            android:id="@+id/viewnow"/>/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Movies"
+        android:textSize="30dp"
+        android:layout_weight=".5"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+       android:textSize="20dp"
+        android:text="View All"
+        android:textColor="#ffffff"
+        android:id="@+id/viewup"/>
+
+</LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/upcom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Top Movies"
+        android:layout_weight=".5"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:text="View All"
+        android:textColor="#ffffff"
+        android:id="@+id/viewtop"/>
+</LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/top"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popular Movies"
+        android:textSize="30dp"
+        android:layout_weight=".5"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:text="View All"
+        android:textColor="#ffffff"
+        android:id="@+id/viewpop"/>
+</LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+ </LinearLayout>
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
+
